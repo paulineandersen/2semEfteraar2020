@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+  background-color lightblue;
+  font-family: 'Alata', sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+
+span {
+		text-align: no-decoration;
+	}
+
+article {
+	color: #2f7ccf;	
+	background-color: #2f7ccf;
+	}
+	
