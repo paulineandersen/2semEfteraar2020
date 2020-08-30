@@ -3,7 +3,6 @@
  * purpose: interactivity
  * inspration from: https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_js_prop
  **/
-
 var myVideo = document.getElementById("myVideo");
 // preload
 myVideo.width = 420;
@@ -39,7 +38,6 @@ function orangeAmp() {
     myVideo.muted = false;
 }
 
-
 function makeSmall() {
     myVideo.width = 200;
 }
@@ -47,3 +45,9 @@ function makeSmall() {
 function makeNormal() {
     myVideo.width = 420;
 }
+
+// eventlisteners will give you fewer codelines
+shutup.addEventListener('click',
+  function(){
+    myVideo.muted = true;
+  });

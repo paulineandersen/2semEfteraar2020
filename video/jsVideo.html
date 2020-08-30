@@ -8,13 +8,16 @@
   <title>JavaScript Boilerplate</title>
 </head>
 <body>
-  <div style="text-align:center"> 
+  <div style="text-align:center">
    <!-- buttons -->
     <button onclick="playPause()">Play/Pause</button>
     <button onclick="makeBig()">Big</button>
     <button onclick="makeSmall()">Small</button>
     <button onclick="makeNormal()">Normal</button><br>
-   
+
+    <!-- a more elegant solution is: -->
+    <button id="shutup">Schnautze!</button>
+
     <!-- content -->
     <video id="myVideo" width="600">
       <source src="media/parade-edinburgh-2015.MP4" type="video/mp4">
@@ -27,6 +30,6 @@
     <p>See <a href="https://www.w3schools.com/jsref/dom_obj_video.asp">this W3 Schools page</a>.</p>
     </div>
   <!-- scripts -->
-  <script src="js/js.js"></script>  
+  <script src="js/js.js"></script>
 </body>
 </html>
