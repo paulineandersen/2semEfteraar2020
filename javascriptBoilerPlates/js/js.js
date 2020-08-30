@@ -2,4 +2,9 @@
  * file: js.js
  * purpose: interactivity
  **/
-console.log('Stardate 235678.89: JavaScript from js/js.js is up and running.');
+console.log('JavaScript from js/js.js: up and running!');
+
+// Tjek at DOM er indlæst
+window.onload( function(){
+    // ... your code here ...
+} )
