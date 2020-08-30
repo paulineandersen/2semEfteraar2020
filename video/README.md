@@ -19,7 +19,7 @@ shutup.addEventListener('click',
     myVideo.muted = true;
   });
 
-// or call a name function like this:
+// or call a named function like this:
 shutup.addEventListener('click', shutUpPlease);
 
 ~~~~
