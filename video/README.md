@@ -20,8 +20,6 @@ shutup.addEventListener('click',
   });
 
 // or call a name function like this:
-
-// ..... etc. .....
 shutup.addEventListener('click', shutUpPlease);
 
 ~~~~
