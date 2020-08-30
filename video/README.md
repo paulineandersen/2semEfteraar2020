@@ -11,11 +11,11 @@ var myVideo = document.getElementById("myVideo");
 myVideo.width = 420;
 myVideo.controls = true;
 
-shutUp.addEventListener("click", shutUpPlease);
-
-function shutUpPlease(){
-  myVideo.muted = true;
-}
+// eventlisteners will give you fewer codelines
+shutup.addEventListener('click',
+  function(){
+    myVideo.muted = true;
+  });
 
 // ..... etc. .....
 
