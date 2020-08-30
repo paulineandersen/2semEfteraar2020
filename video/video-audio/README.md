@@ -11,7 +11,7 @@ var myVideo = document.getElementById("myVideo");
 myVideo.width = 420;
 myVideo.controls = true;
 
-myVideo.addEventListener("click", shutUpPlease);
+shutUp.addEventListener("click", shutUpPlease);
 
 function shutUpPlease(){
   myVideo.muted = true;
