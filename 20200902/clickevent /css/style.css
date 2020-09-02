@@ -1,0 +1,56 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+body {
+  background-color: #000;
+    background-image:url(../images/underwater.jpg); 
+    background-size: cover; 
+}
+
+/** firkant **/
+h1, p {color: #fff;}
+#square { 
+}
+
+img {
+    width: 50%; 
+}
+
+#dykker {
+    margin-top: -150px;
+    margin-right: -200px; 
+    width: 60%; 
+}
+
+.images {
+    display: flex; 
+}
+
+/** en from to animation **/
+@keyframes example {
+  from {left: 0px;}
+  to {left: 400px}
+}
+
+/** denne class kaldes og fjernes af javascriptet **/
+
+.animate {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+}
+
+@keyframes example2 {
+    from {right: 0px;}
+    to {right: 300px}
+}
+
+.animate2 {
+    position: relative;
+    animation-name: example2;
+    animation-duration: 5s; 
+    
+}

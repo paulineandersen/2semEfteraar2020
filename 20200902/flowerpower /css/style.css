@@ -1,0 +1,24 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+body {
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.red {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: transparent; 
+    background-image:url(../images/blomst.png); 
+    background-size: cover; 
+}
+
+#blomst {
+    width: 30%;
+    margin-left: 30%;
+}

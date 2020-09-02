@@ -82,13 +82,15 @@ element.style.color = "#2d4a9a";
 // element.style.backgroundColor = "orange"; 
 element.style.fontFamily = "helvetica"; 
 
-<!-- du kan style -->
+// du kan style 
 
 var kort = [
     "../images/kort.png",
     "../images/greenman.jpg",
     "../images/marselis.jpg"
 ]; 
+
+// det er en array
 
 //loope listen ud
 for (let n=0; n<kort.length; n++) {
