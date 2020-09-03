@@ -6,13 +6,13 @@ console.log('JavaScript from js/js.js: up and running!');
 
 // Tjek at DOM er indlæst
 
-
+let blomst = document.getElementById("div"); 
 let Many = function(){
 
   let h = document.body.clientHeight;
   let w = document.body.clientWidth;
 
-	for(let i=0; i<howMany; i++){
+	for(let i=0; i<99; i++){
   
   	// create elements on the fly
     let newDiv = document.createElement("div");

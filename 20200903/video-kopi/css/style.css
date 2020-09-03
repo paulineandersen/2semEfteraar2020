@@ -1,0 +1,26 @@
+/**
+ * file: style.css
+ * project: video sample
+ **/
+
+button {
+    background-color: orange; 
+    border-radius: 20px; 
+    
+}
+
+.vid {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center; 
+}
+
+#shutup {
+    width: 50%; 
+}
+
+video {
+        text-align: center; 
+
+    
+}
