@@ -20,7 +20,10 @@ button {
 }
 
 video {
-        text-align: center; 
-
     
+}
+
+#click {
+    padding: 20px; 
+    font-size: 20px; 
 }

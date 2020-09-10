@@ -56,13 +56,10 @@ function playPause() {
     document.getElementById("pp").innerHTML = "Pause";
 }
 
-function newVideo() {
-    var New = document.getElementById("myVideo");
-    if (New.style.display ==="none") {
-        New.style.display = "block";
-    } else {
-        New.style.display = "none"; 
-    }
-    }
+let Abracadabra = function() {
+    let srcTag = document.createElement("source");
+    let video2src = "../media/parade-edinburgh-2015.MP4";
+    srcTag.src = video2src;
+    video2.appendChild(srcTag;)
 }
 
