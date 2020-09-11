@@ -1,0 +1,36 @@
+/**
+ * file: css/style.css
+ **/
+
+#div1 {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; 
+    background-color: pink; 
+    position: fixed; 
+}
+
+#sektion2, #sektion3, #sektion4 {
+    height: 600px;
+    background-color: skyblue; 
+}
+
+#dot {
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+    margin-left: 70px;
+    margin-top: 20px; 
+
+}
+
+#sektion1:hover {
+    background-color: black; 
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
