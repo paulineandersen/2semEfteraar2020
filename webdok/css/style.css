@@ -1,0 +1,360 @@
+:root {
+    --mainFont: 'courier new';
+}
+
+
+/* Nav bar */
+html {
+    scroll-behavior: smooth;
+}
+
+
+#navbar {
+    margin-top: 7%;
+    margin-left: 3.5%;
+    position: fixed;
+    z-index: 1;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 90px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+}
+
+
+.dot:hover {
+    background-color: #f5c020;
+}
+
+/* mousemove*/
+
+canvas {
+    background-image: url(../images/canvas-bagggrund.jpg);
+    width: 100%;
+    z-index: 1;
+}
+
+#knapcanvas h1 {
+    position: absolute;
+    margin-top: 6%;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    max-width: 35rem;
+    margin-left: 30%;
+
+    /* Animation */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/*spil funktion */
+
+#a {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    top: 50%;
+    right: 70%;
+    padding: 70px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/baggrund2.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100%;
+}
+
+#video {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+
+/* tekst */
+
+.alt_tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+.tekst1 {
+    align-self: flex-end;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.tekst2 {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.tekst3 {
+    align-self: flex-end;
+    width: 40%;
+    margin-left: 50%;
+}
+
+.flex_tekst {
+    display: flex;
+    flex-direction: row;
+}
+
+
+h1 {
+    font-family: var(--mainFont);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--mainFont);
+    color: white;
+    margin: none;
+}
+
+p {
+    font-family: var(--mainFont);
+    color: white;
+    line-height: 25px;
+    font-size: 130%;
+}
+
+#bbillede img {
+    opacity: 40%;
+    max-width: 400px;
+    margin-left: 1000px;
+    position: absolute;
+}
+
+#abillede img {
+    opacity: 40%;
+    max-width: 400px;
+    margin-top: -400px;
+    margin-left: -600px;
+    position: absolute;
+}
+
+
+.lyt-til-eleverne {
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    max-width: 8rem;
+    margin-left: 45%;
+
+    /* Animation */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+
+#sektion2 {
+    margin-top: 15%;
+}
+
+/* typewriting effekt */
+
+
+.overskrift1 {
+    position: relative;
+    margin-bottom: -30px;
+    margin-left: 50%;
+    margin-top: 200px;
+    width: 60%;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    max-width: 30rem;
+
+    /* Animation */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+.overskrift2 {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: -30px;
+    margin-left: 10%;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    max-width: 10rem;
+
+    /* Animation */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+
+.overskrift3 {
+    position: relative;
+    margin-bottom: -30px;
+    margin-top: 70px;
+    margin-left: 50%;
+    width: 53%;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    max-width: 37rem;
+
+    /* Animation */
+    animation: typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 53%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #f5cb42;
+    }
+}
+
+
+/* sektion 4 omkring elever */
+
+#div_sektion4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#sektion4 {
+    font-size: 180%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#speaker {
+    width: 35px;
+    height: 35px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+#elever img {
+    margin-top: 5%;
+    min-width: 350px;
+}
+
+.img_elev {
+    width: 10%; 
+    height: auto;
+}
+
+
+#play1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#play2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#play3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#play4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#elever {
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+
+
+
+/*FOOTER START*/
+
+#so_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+}
+
+#so_me img {
+    width: 50px;
+    height: auto;
+    padding: 15px;
+
+}
+
+
+/*FOOTER SLUT */
