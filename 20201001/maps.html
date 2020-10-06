@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Display a map</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+	body { 
+        margin: 0; 
+        padding: 0; }
+	#map {    
+        width: 100%;
+        height: 400px;}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<h1>Her er Aarhus</h1>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoicGF1bGluZXNhIiwiYSI6ImNrZnFrZW94cjE1NjYyem9lYXg5dm5xbDEifQ.q_A2UiOFc2bEjL8-yUUwVg';
+    var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/paulinesa/ckfqkpvau25fx19o2ooagh6jj', // style URL
+        center: [10.218, 56.154], // starting position [lng, lat]
+        zoom: 14 // starting zoom
+    });
+    
+    var marker = new mapboxgl.Marker()
+    .setLngLat(10.19722, 56.12507)
+    .addTo(map); 
+</script>
+
+</body>
+</html>

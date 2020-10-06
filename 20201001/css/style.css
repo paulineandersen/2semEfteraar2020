@@ -1,0 +1,18 @@
+/**
+ * file: css/style.css
+ **/
+
+
+body {
+    background-color: darkseagreen;
+    font-family: Helvetica; 
+}
+
+button, #send {
+    color: darkseagreen;  
+    width: 80px;
+    height: 30px;
+    border: 3px; 
+    background-color: darkgreen;
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <title>Weather: Here and now</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: sans serif;
+            background: #5f6ea2;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Openweathermap Sample</h1>
+
+    <!-- the weather will appear below -->
+    <div id="result"></div>
+
+    <script>
+        /*
+  THE DOCUMENTATION MAY CONFUSE YOU A BIT, SO HERE'S A HOWTO
+  
+  DON'T
+  please, don't use this sample:
+  https://samples.openweathermap.org/data/2.5/weather?q=Aarhus,DK&appid=YOURTOKENHERE
+
+  DO
+  Use the api as below:
+  https://api.openweathermap.org/data/2.5/weather?q=Aarhus,DK&appid=YOURTOKENHERE
+  
+  PS:
+  Probably your token will not activate right away. Have some patience here.
+  */
+        const token = "c55283147e5e2dcdf6decfc75d9b0681"; // save your token in this variable
+
+        const aarhus = "https://api.openweathermap.org/data/2.5/weather?q=Aarhus,DK&appid=" +
+            token +
+            "&units=metric";
+
+        $(document).ready(function() {
+
+            // get the weather data: henter api'en 
+            fetch(aarhus).then(response => {
+                return response.json();
+            }).then(data => {
+
+                // Work with JSON data here
+                console.log(data); // show what's in the json
+                // jquery append: går ind i id'en og tilføjer/appender en anden div
+                $('#result').append(
+                    '<div class="weatherInfo">' +
+                    data.weather[0].main +
+                    ' in ' +
+                    data.name +
+                    '<figure><img src="http://openweathermap.org/img/w/' +
+                    data.weather[0].icon +
+                    '.png" alt="The weather : ' +
+                    data.weather[0].main +
+                    '"></figure>' +
+                    '</div>');
+
+                // here are the icons: https://openweathermap.org/weather-conditions 
+
+            }).catch(err => {
+                // Do something for an error here
+                console.log('There was an error ...');
+            });
+
+        }); // document ready end
+
+    </script>
+
+</body>
+
+</html>
