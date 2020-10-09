@@ -1,51 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&display=swap');
+
+.parallax {
+    background-image: url(../images/oktoberfest-1.webp);
+
+    height: 100%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:-5%;
+}
+
+
 body {
-    background-color: gainsboro; 
+    background-color: gainsboro;
     font-family: helvetica;
-    margin: 10%; 
-    
-     
+    height: 100%;
+    background-image:url(../images/beerbackground.png);
+    background-size:cover;
+
+}
+
+html {
+    height: 100%; 
 }
 
 #map {
-   height: 500px; 
-    width: 500px; 
-    text-align: center; 
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    margin-left: 32%;
 }
 
-h1 { 
+h1 {
     text-align: center;
-    color: darkorange;
+    color: white;
+    font-family: 'Bungee Shade', cursive;
+    padding-top: 10%; 
+    font-size: 50px;; 
 }
 
 p {
-   column-count: 2;     
-}
-
-h2 {
     font-size: 20px;
-    text-align: center;
-    color: darkorange;
-}
-
-#menu {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
-#result {
+    background-color: #2F6A4F;
+    color: white;
+    padding: 2%;
+    border-radius: 25px;
     text-align: center; 
 }
 
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #2F6A4F;
+    font-family: 'Bungee Shade', cursive;
+}
+
+h4 {
+    color: #2F6A4F
+}
+
+
+#result {
+    text-align: center;
+}
+
 #oktoberfest {
-    width: 100%; 
+    width: 100%;
 }
 
 .weatherInfo {
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
+    border-radius:50px; 
+    border: 15px dotted #2F6A4F; 
+    width: 30%;
+    margin-left:33%;
+    
 }
 
 #thermo {
-    height: 1%;  
+    height: 0.75%;
+}
+
+#ul_menu {
+    color: white; 
+    list-style: circle; 
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px; 
+}
+
+.sektion2 {
+    background-color: #2F6A4F;
+    border-radius: 25px;
+    width: 40%;
+    margin-left: 32%;
+}
+
+#dagensmenu {
+    color: white; 
+}
+
+#sektion4 {
+    background-color: orange;
 }

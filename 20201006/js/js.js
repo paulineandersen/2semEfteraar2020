@@ -2,37 +2,33 @@
 
 console.log('Det kører!');
 
-const token = "c55283147e5e2dcdf6decfc75d9b0681"; // save your token in this variable
 
-const aarhus = "https://api.openweathermap.org/data/2.5/weather?q=Aarhus,DK&appid=" +
-    token +
-    "&units=metric";
 
 $(document).ready(function () {
 
     // get the weather data: henter api'en 
-    fetch(aarhus).then(response => {
+    fetch("http://api.openweathermap.org/data/2.5/weather?q=Aarhus&lang=da&units=metric&appid=c55283147e5e2dcdf6decfc75d9b0681").then(response => {
         return response.json();
     }).then(data => {
 
-        console.log(data); 
+        console.log(data);
         $('#result').append(
             '<div class="weatherInfo">' + '<img src="../images/temperatur.png">' +
-            '<h4>Temperaturen er ' + data.main.temp + ' grader</h4>' + '<figure><img src="http://openweathermap.org/img/w/50d.png">'+ '<h4>Vindhastigheden er ' + data.wind.speed + ' m/s</h4>' + 
+            '<h4>Temperaturen er ' + data.main.temp + ' grader</h4>' + '<figure><img src="http://openweathermap.org/img/w/50d.png">' + '<h4>Vindhastigheden er ' + data.wind.speed + ' m/s</h4>' +
             '<figure><img src="http://openweathermap.org/img/w/' +
             data.weather[0].icon +
             '.png" alt="The weather : ' +
             data.weather[0].main +
-            '"></figure>' + data.weather[0].main +
+            '"></figure>' + '<h4>' + data.weather[0].description +
             ' i ' +
-            data.name + ', ' + data.sys.country +
+            data.name + ', ' + data.sys.country +  '</h4>' +
             '</div>');
 
     }).catch(err => {
         // Do something for an error here
         console.log('There was an error ...');
 
-        
+
     });
 
 
@@ -45,5 +41,3 @@ var map = new mapboxgl.Map({
     center: [10.218797, 56.164464], // starting position [lng, lat]
     zoom: 16 // starting zoom
 });
-
-
