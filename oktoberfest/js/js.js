@@ -21,7 +21,7 @@ $(document).ready(function () {
             data.weather[0].main +
             '"></figure>' + '<h4>' + data.weather[0].description +
             ' i ' +
-            data.name + ', ' + data.sys.country +  '</h4>' +
+            data.name + ', ' + data.sys.country + '</h4>' +
             '</div>');
 
     }).catch(err => {

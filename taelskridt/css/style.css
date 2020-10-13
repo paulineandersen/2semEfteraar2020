@@ -1,0 +1,94 @@
+/**
+ * file: css/style.css
+ **/
+
+
+body {
+    background-color: #fff;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+
+.burgerbar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+
+}
+
+.navbar {
+    width: 100vw;
+    background-color:
+}
+
+#navul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    list-style-type: none;
+    margin: 2vw;
+}
+
+li a {
+    text-decoration: none;
+    padding: 2vw;
+    color: #000;
+}
+
+li a:hover {
+    background-color: orange;
+}
+
+/** indmeld **/
+
+#sektion1 {
+    width: 50%;
+}
+
+.box {
+    
+}
+
+form {
+    display: flex;
+}
+
+#sektion2 {
+    width: 50%; 
+
+}
+
+.login {
+    width: 30%;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    #navul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        direction: rtl;
+        margin-top: 10px;
+        ;
+    }
+
+    .burgerbar {
+        display: block;
+
+    }
+
+    #bar {
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+    }
