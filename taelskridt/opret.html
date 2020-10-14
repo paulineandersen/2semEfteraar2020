@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Tæl Skridt</title>
+    <meta name="author" content="Alberte, Signe, Emma og Pauline">
+    <meta name="description" content="Tæl Skrift kampagneside">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<body>
+    <header>
+        <div id="bar">
+            <div class="burgerbar"></div>
+            <div class="burgerbar"></div>
+            <div class="burgerbar"></div>
+        </div>
+        <nav class="navbar">
+            <img src="#" id="logo">
+            <ul id="navul">
+                <li><a href="#om">Om</a></li>
+                <li><a href="#s&S">Spørgsmål og svar</a></li>
+                <li><a href="#priser">Priser</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <ul id="opretnav">
+            <li><a href="#oplysninger" id="page1">Oplysninger</a></li>
+            <li><a href="#" id="page2">Betaling</a></li>
+            <li><a href="#" id="page3">Bekræftelse</a></li>
+        </ul>
+
+        <form action="#" method="post">
+            <section id="oplysninger">
+                <div id="oplysninger1">
+                <h1>Dine oplysninger</h1>
+                <label for="navn"></label><input type="text" class="box3" name="navn" value="Navn"><br><br>
+                <label for="email"></label><input type="text" class="box3" name="email" value="E-mail"><br><br>
+                <label for="adresse"></label>
+                <input type="text" class="box3" name="adresse" value="Adresse"><br><br>
+                <label for="firma"></label>
+                <input type="text" class="box3" name="firma" value="Firma"><br><br>
+                <label for="holdnavn"></label>
+                <input type="text" class="box3" name="holdnavn" value="Holdnavn"><br><br>
+                </div>
+                
+                <div id="oplysninger2">
+                <h1>Tilføj medlemmer</h1>
+                <label for="navn"></label><input type="text" class="box3" name="navn" value="Navn"><br><br>
+                <label for="email"></label><input type="text" class="box3" name="email" value="E-mail"><br><br>
+                </div>
+                <button type="button" class="videre"><a ahref="#betaling"> Videre til betaling</a></button>
+            </section>
+    
+            
+            <section id="betaling">
+                <h1>Betalingsoplysninger</h1>
+                <label for="kortnummer"></label><input type="text" class="box4" name="kortnummer" value="Kortnummer"><br><br>
+                <label for="udløbsdato"></label><input type="text" class="box4" name="udløbsdato" value="Udløbsdato"><br><br>
+                <label for="CVC"></label>
+                <input type="text" class="box4" name="CVC" value="CVC"><br><br>
+                <button type="button" class="bekraeft"> Bekræft </button>
+            </section>
+            
+            <section id="bekraeftelse">
+            <h1>TILLYKKE - DIT HOLD ER NU TILMELDT!</h1>
+            <p>Send en motiverende besked til dine holdmedlemmer</p>
+            </section>
+        </form>
+
+
+
+    </main>
+
+
+    <footer></footer>
+
+    <!-- load jQuery library -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+
+    <!-- load JavaScript -->
+    <script src="js/js.js"></script>
+</body></html>
