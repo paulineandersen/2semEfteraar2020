@@ -64,6 +64,11 @@ li a:hover {
     width: 20%;
     padding: 25px;
     margin-left: 10%;
+    color: black; 
+}
+
+#start a {
+    text-decoration: none; 
 }
 
 #index h1 {
@@ -139,6 +144,10 @@ button {
     margin-top: 20px;
 }
 
+.login a {
+    text-decoration: none; 
+}
+
 #checkbox {
     display: flex; 
     flex-direction: column; 
@@ -161,7 +170,7 @@ button {
 #opretnav li a {
     border: 1px solid var(--grey);
     text-decoration: none;
-    padding: 1vw;
+    padding: 8px;
     border-radius: 70px;
     color: var(--grey);
     font-size: 15px;
@@ -178,7 +187,7 @@ button {
     width: 120%;
     border-radius: 50px; 
     border: 1px solid var(--grey);
-    font-size: 15px; 
+    font-size: 20px; 
 }
 
 #oplysninger2 {
@@ -189,7 +198,7 @@ button {
     width: 30%;
     border-radius: 50px;
     border: 1px solid var(--grey);
-    font-size: 15px; 
+    font-size: 20px; 
 }
 
 #betaling {
@@ -320,4 +329,24 @@ button {
     left: 50%;
     z-index: 0; 
     transform: translate(-50%, -50%);
+    }
+    
+    #start {
+        width: 50%;
+        padding: 8px;
+        margin-top: 10%;
+    }
+    
+    #grass {
+        margin-top: 40%;
+    }
+    
+    #index p {
+        margin-right: 10%;
+    }
+    
+    .form {
+        flex-direction: column;
+        text-align: center;
+        
     }
