@@ -20,41 +20,49 @@
             <div class="burgerbar"></div>
         </div>
          <nav class="navbar">
+            <a href="index.html"><img src="images/logo.png" id="logo" alt="logo"></a>
             <ul id="navul">
-                <img src="images/logo.png" id="logo" alt="logo">
                 <li><a href="#om">OM OS</a></li>
                 <li><a href="#om">VÆR MED</a></li>
                 <li><a href="#s&S">SPØRGSMÅL OG SVAR</a></li>
                 <li><a href="#priser">PRISER</a></li>
                 <a ahref="#"><img src="images/head.png" alt="head" id="head"></a>
             </ul>
+
         </nav>
     </header>
 
 
     <main>
-            <form action="#" method="post">
+            <form action="#" method="post" class="form">
                 <section id="sektion1">
                     <h1>Er du ny?</h1>
-                    <label for="email">E-mail</label><input type="text" class="box" name="email"><br><br>
-                    <label for="Kode">Kodeord</label>
-                    <input type="text" class="box" name="Kode"><br><br>
-                    <label for="GentagKode">Gentag kodeord</label>
-                    <input type="text" class="box" name="GentagKode"><br><br>
+                    <label for="email"></label><input type="text" class="box" name="email" value="E-mail"><br><br>
+                    <label for="Kode"></label>
+                    <input type="text" class="box" name="Kode" value="Kodeord"><br><br>
+                    <label for="GentagKode"></label>
+                    <input type="text" class="box" name="GentagKode" value="Gentag kodeord"><br><br>
                     <button type="button" class="login"> Log ind </button>
                 </section>
 
                 <section id="sektion2">
                     <h1>Har du været med før?</h1>
-                    <label for="email">E-mail</label><input type="text" class="box2" name="email"><br><br>
-                    <label for="Kode">Kodeord</label>
-                    <input type="text" class="box2" name="Kode"><br><br>
+                    <label for="email"></label><input type="text" class="box" name="email" value="E-mail"><br><br>
+                    <label for="Kode"></label>
+                    <input type="text" class="box" name="Kode" value="Kodeord"><br><br>
                     
-                    <label class="container">Jeg er holdmedlem<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
+                    <div id="checkbox">
+                    <div class="check">
+                    <label class="container">Jeg er holdmedlem<input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
+                    <div class="check">
                     <label class="container">Jeg er holdkaptajn<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
-                    <button type="button" class="login"> Tilmeld </button>
+                    </div>
+                    </div>
+                    <button type="button" class="login"><a href="opret.html">Tilmeld</a></button>
                 </section>
             </form>
+        
+        <p class="tilbage"><a href="index.html">&#8592 Tilbage</a></p>
 
 
     </main>

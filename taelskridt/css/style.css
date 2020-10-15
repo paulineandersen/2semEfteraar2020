@@ -13,7 +13,7 @@
 
 
 body {
-    background-color: #fff;
+    background-color: #F7F3ED;
     font-family: var(--mainfont);
     margin: 0;
     width:100%;
@@ -59,10 +59,32 @@ li a:hover {
     background-color: orange;
 }
 
+#start {
+    font-size: 30px; 
+    width: 20%;
+    padding: 25px;
+    margin-left: 10%;
+}
+
+#index h1 {
+    margin-left: 10%;
+    margin-top: 10%;
+    color: black;
+}
+
+#grass {
+    width:100%; 
+}
+
+#index p {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
 #head {
     width: 40px;
     height: 40px;
-    margin-top: 25%;
+    margin-top: 28%;
     padding-right: 40%; 
 }
 
@@ -80,22 +102,61 @@ button {
     height: 10%;
 }
 
+.tilbage {
+    text-align: end;
+    margin-right: 30px; 
+    font-size:20px; 
+    color: black;
+   
+}
+.tilbage a {
+     text-decoration: none; 
+}
+
 /** indmeld **/
 
+.form {
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#sektion1 {
+    margin-right: 10%;
+}
+
+.box{
+    width:250px;
+}
+
+.login {
+   border: 1px solid var(--grey);
+    width: 40%; 
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#checkbox {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.check {
+    margin-top:5px; 
+}
 
 /** opret **/
-
-hr {
-    z-index: 0; 
-    
-}
 
 #opretnav {
     display: flex;
     justify-content: center;
-    z-index: 1;
-
+    z-index: 5;
+    position: relative;
 }
+
 
 #opretnav li a {
     border: 1px solid var(--grey);
@@ -103,12 +164,9 @@ hr {
     padding: 1vw;
     border-radius: 70px;
     color: var(--grey);
+    font-size: 15px;
 }
 
-
-#opretnav>.active>a { 
-            background-color: red; 
-            color: green; 
 
 #oplysninger {
     display: flex;
@@ -119,6 +177,8 @@ hr {
 .box3 {
     width: 120%;
     border-radius: 50px; 
+    border: 1px solid var(--grey);
+    font-size: 15px; 
 }
 
 #oplysninger2 {
@@ -128,6 +188,8 @@ hr {
 .box4 {
     width: 30%;
     border-radius: 50px;
+    border: 1px solid var(--grey);
+    font-size: 15px; 
 }
 
 #betaling {
@@ -178,18 +240,27 @@ hr {
 
 
 @media only screen and (max-width: 500px) {
+    
+    header{
+        background-color: var(--blue); 
+        padding-bottom: 10%;
+    }
+    
 
     #navul {
         flex-direction: column;
         position: absolute;
         right: 0;
         direction: rtl;
-        margin-top: 10px;
-        ;
+        margin-top: 35px;
+        background-color: var(--blue);
+        z-index: 10;
+        
     }
 
     .burgerbar {
         display: block;
+        background-color: #fff; 
 
     }
 
@@ -197,4 +268,56 @@ hr {
         position: absolute;
         right: 0;
         margin-right: 10px;
+    }
+    
+    #logo {
+        width:20%;
+    }
+    
+    #head {
+        padding-right:10px;
+        margin-top: 0;
+    }
+    
+    #oplysninger {
+    flex-direction: column; 
+        margin-left: 7%; 
+    }
+    
+    #oplysninger1 {
+    width: 70%; 
+
+        
+    }
+    
+    #oplysninger2 {
+    margin-left:0;
+        width: 70%;
+    }
+    
+    .videre {
+        width:50%; 
+        top: 70%; 
+    }
+    
+    .bekraeft {
+        width: 50%;
+    }
+    
+    .box4{
+        width: 60%;
+    }
+    
+    #b_div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .chat {
+    width: 30%; 
+    position: fixed;
+    top: 37%;
+    left: 50%;
+    z-index: 0; 
+    transform: translate(-50%, -50%);
     }
