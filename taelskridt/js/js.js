@@ -20,7 +20,7 @@ $(document).ready(function () {
        $('#oplysninger').show(); 
         $('#betaling').hide(); 
         $('#bekraeftelse').hide();
-    });
+        }); 
     
     
     $('#page2').click(function(){
@@ -48,5 +48,6 @@ $(document).ready(function () {
         $('#betaling').hide();
     });
     
+   
    });
     

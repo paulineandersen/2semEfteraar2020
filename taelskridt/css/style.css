@@ -106,9 +106,9 @@ hr {
 }
 
 
-#opretnav li a:visited {
-    background-color: var(--green); 
-}
+#opretnav>.active>a { 
+            background-color: red; 
+            color: green; 
 
 #oplysninger {
     display: flex;
@@ -118,6 +118,7 @@ hr {
 
 .box3 {
     width: 120%;
+    border-radius: 50px; 
 }
 
 #oplysninger2 {
@@ -125,7 +126,8 @@ hr {
 }
 
 .box4 {
-    width: 50%;
+    width: 30%;
+    border-radius: 50px;
 }
 
 #betaling {
@@ -134,8 +136,9 @@ hr {
 
 .bekraeft {
     width: 20%;
-    height: 20%;
+    height: 50px;
     font-size: 18px;
+    border: 1px solid var(--grey);
 }
 
 .videre {
@@ -147,6 +150,7 @@ hr {
     width: 20%;
     height: 7%; 
     font-size: 18px; 
+    border: 1px solid var(--grey);
 }
 
 #bekraeftelse h1 {
@@ -155,6 +159,21 @@ hr {
 
 #bekraeftelse p {
     text-align: center;
+}
+
+#medsmaat {
+    font-size: 10px; 
+}
+
+#b_div {
+    display: flex; 
+    justify-content: center;
+}
+
+.chat {
+    width: 10%; 
+    margin-left: 2vw;
+    border: 1px solid var(--grey);
 }
 
 
