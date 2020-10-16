@@ -21,10 +21,10 @@ $(document).ready(function () {
 
                 console.log(data);
                 $('#result').append(
-                    '<h4>' + data.name + '</h4>' + '<div id="vejr">' + '<figure><img src="../images/' +
+                    '<h4>' + data.name +  '</h4>' + '<p>Vejret i dag: </p>' + '<div id="vejr">' + '<figure><img src="../images/' +
                     data.weather[0].icon +
                     '.png" alt="The weather' +
-                    '"></figure>'+ '<h6>' + data.main.temp + ' &#730</h6>' + '</div>' + '<h5>' + 'Der er ' + data.weather[0].description + '. </h5>');
+                    '"></figure>'+ '<h6>' + data.main.temp + ' &#730</h6>' + '</div>' + '<p>' + 'Der er ' + data.weather[0].description + '. </p>');
 
             }).catch(err => {
                 // Do something for an error here

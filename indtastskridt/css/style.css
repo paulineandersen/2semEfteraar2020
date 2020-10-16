@@ -55,19 +55,21 @@ body {
     direction: rtl;
     background-color: var(--blue);
     z-index: 10;
+    margin-top: 10px; 
 }
 
 li {
     list-style-type: none;
-    margin: 2vw;
+    margin: 4vw;
 
 }
 
 #navul li a {
     text-decoration: none;
-    padding: 2vw;
+    padding: 2vw; 
     color: #fff;
     font-family: var(--mainfont);
+    font-size: 25px; 
 }
 
 li a:hover {
@@ -102,6 +104,49 @@ header {
     padding-bottom: 10px; 
 }
 
-result {
-    margin-left: 20%;
+#result {
+    text-align: center; 
+}
+
+h4 {
+    font-size:40px; 
+    text-transform: uppercase; 
+    margin-bottom:5%;
+}
+
+p   {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom:0; 
+    
+}
+
+h6 {
+    font-size: 50px;
+    margin-bottom:0;
+    margin-top:12%;
+}
+#vejr {
+    display:flex; 
+}
+
+#vejr img { 
+    width: 120px;
+}
+
+.tilbage {
+    text-align: end;
+    margin-right: 30px; 
+    font-size:20px; 
+   
+}
+.tilbage a {
+     text-decoration: none; 
+    color: black;
+}
+
+/** kajkage **/
+
+#kajkage {
+    width: 50%; 
 }
