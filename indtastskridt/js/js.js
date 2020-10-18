@@ -33,12 +33,22 @@ $(document).ready(function () {
 
             });
 
-        fetch("api.openweathermap.org/data/2.5/forecast?q=Aarhus&units=metric&lang=da&appid=091ba5fb1468a27422d021d02155ae9b").then(response => {
+          fetch("http://api.openweathermap.org/data/2.5/forecast?q=Aarhus&units=metric&lang=da&appid=091ba5fb1468a27422d021d02155ae9b").then(response => {
                 return response.json();
             }).then(data => {
 
                 console.log(data);
-                $('#forecast').append();
+
+                for (var i=0; i<data.list.length; i++) {
+
+                  console.log( data.list[i].dt_txt );
+
+                  $('#forecast').append(
+                    '<h2>' + data.list[0].main.temp + '</h2>' + data.list[0].weather[0].description
+
+                  );
+
+                }
 
             }).catch(err => {
                 // Do something for an error here
