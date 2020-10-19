@@ -33,7 +33,7 @@ $(document).ready(function () {
 
             });
 
-          fetch("http://api.openweathermap.org/data/2.5/forecast?q=Aarhus&units=metric&lang=da&appid=091ba5fb1468a27422d021d02155ae9b").then(response => {
+          fetch("http://api.openweathermap.org/data/2.5/forecast?q=Aarhus&units=metric&lang=da&cnt=20&appid=091ba5fb1468a27422d021d02155ae9b").then(response => {
                 return response.json();
             }).then(data => {
 
@@ -44,9 +44,7 @@ $(document).ready(function () {
                   console.log( data.list[i].dt_txt );
 
                   $('#forecast').append(
-                    '<h2>' + data.list[0].main.temp + '</h2>' + data.list[0].weather[0].description
-
-                  );
+                    '<p>' + data.list[i].dt_txt + '<h3>' + data.list[i].main.temp + '&#730 og ' +  data.list[i].weather[0].description + '</h3>' + '</p>');
 
                 }
 
