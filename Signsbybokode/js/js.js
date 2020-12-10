@@ -10,6 +10,17 @@ $(document).ready(function() {
             
 console.log('Hej fra js/js.js: nu med jQuery!');
     
+    // overskrift animation
+    $(window).scroll(function(){
+    $("#scroll").css("opacity", 1 - $(window).scrollTop() / 450);
+    });
+    
+    // video scroll function
+    $(window).scroll(function(){
+    $(".forsidevideo").css("opacity", 1 -
+    $(window).scrollTop() / 3750);
+    });
+    
     // Kontakt knappen kan foldes ud
     $('#klik').hide(); 
     
@@ -30,6 +41,9 @@ $('.pilflex').hover(function () {
 }, function(){
     $('.right').animate({left: '0px'})
     }); 
+    
+    
+
     
 
 /** scroll effekt
