@@ -233,6 +233,7 @@ h4 {
 /* SLUT FORSIDE OVERSKRIFT */
 
 .forsidevideo {
+    min-width: 600px; 
     width: 100%;
     height: auto;
     display: block;
