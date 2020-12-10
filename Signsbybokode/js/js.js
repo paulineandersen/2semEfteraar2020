@@ -12,7 +12,11 @@ console.log('Hej fra js/js.js: nu med jQuery!');
     
     // overskrift animation
     $(window).scroll(function(){
-    $("#scroll").css("opacity", 1 - $(window).scrollTop() / 550);
+    $("#scroll").css("opacity", 1 - $(window).scrollTop() / 650);
+    });
+    
+    $(window).scroll(function(){
+    $(".forsidevideo").css("opacity", 1 - $(window).scrollTop() / 5000);
     });
     
     // Kontakt knappen kan foldes ud
