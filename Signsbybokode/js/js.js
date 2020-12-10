@@ -10,38 +10,18 @@ $(document).ready(function() {
             
 console.log('Hej fra js/js.js: nu med jQuery!');
     
+    // Kontakt knappen kan foldes ud
+    $('#klik').hide(); 
     
-
+    $('#takt').click(function() {
+        
+    $('#klik').toggle(10);
+    });
     
-// KONTAKT KNAP 
-// http://jsfiddle.net/SRw67/
+    $('.kontakt').click(function() {
+        $('#klik').toggle(10);
+    });
 
-    function deselect(e) {
-  $('.pop').slideFadeToggle(function() {
-    e.removeClass('selected');
-  });    
-};
-
-$(function() {
-  $('#contact').on('click', function() {
-    if($(this).hasClass('selected')) {
-      deselect($(this));               
-    } else {
-      $(this).addClass('selected');
-      $('.pop').slideFadeToggle();
-    }
-    return false;
-  });
-
-  $('.close').on('click', function() {
-    deselect($('#contact'));
-    return false;
-  });
-});
-
-$.fn.slideFadeToggle = function(easing, callback) {
-  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
-};
 
 /* arrow */
 
@@ -59,7 +39,29 @@ $(window).scroll(function(){
     $('.teaser1').css("opacity", Synlig + 1); 
 }); **/
     
+    /**
+    
+    var top_of_element = $("#hero").offset().top;
+    var bottom_of_element = $("#hero").offset().top + $("#hero").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+
+    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+        // the element is visible, do something
+        console.log('I am visible now');
+        $('#hero').addClass('brugAnimation');
+        } else {
+        // the element is not visible, do something else
+        console.log('I know noothing!')
+        // ... hide again ...
+    }
+}); */
+
+    
 }); // slut jquery
+
+
+               
     
 /* map til siden OM */
     mapboxgl.accessToken = 'pk.eyJ1IjoicGF1bGluZXNhIiwiYSI6ImNrZnFrZW94cjE1NjYyem9lYXg5dm5xbDEifQ.q_A2UiOFc2bEjL8-yUUwVg';

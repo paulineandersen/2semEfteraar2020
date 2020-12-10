@@ -1,0 +1,1158 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+/* variabler */
+:root {
+    --maintext: 'Proxima Nova';
+    --h_text: 'Bodoni 72 Oldstyle';
+    --green: #355A37;
+    --textcolor: #707070;
+}
+
+
+/* GENERALT */
+body {
+    font-family: var(--maintext);
+    background: white;
+    width: 100%;
+}
+
+
+/* KONTAKT KNAP MED POPUP */
+#contact {
+    color: white;
+    font-family: var(--maintext);
+    letter-spacing: 2px;
+    font-size: 25px;
+    background-color: var(--green);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 70%;
+    right: -2%;
+    transform: rotate(-270deg);
+    font-weight: 100;
+}
+
+.messagepop {
+    background-color: var(--green);
+    cursor: default;
+    position: fixed;
+    margin-top: 15px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    z-index: 10;
+    padding: 25px 25px 20px;
+    top: 65%;
+    right: 3%;
+    font-size: 20px;
+}
+
+.messagepop p {
+    color: #fff; 
+}
+
+.kontakt-info {
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#some_hvid {
+    width: 60%;
+}
+
+#kontaktmap {
+    width: 150px !important;
+    height: 150px !important; 
+    position: fixed; 
+}
+
+/* LINKS - fjerner farve og understregning*/
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* NAVBAR */
+/*NAVIGATION - responsiv med flexbox*/
+
+#logo {
+    width: 40%;
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+}
+
+#logo-burger a {
+    margin-right: auto;
+}
+
+
+#main-nav {
+    display: flex;
+    margin-right: .5em;
+    text-transform: lowercase;
+    width: 100%;
+}
+
+#main-nav a {
+    color: black;
+    font-family: var(--maintext);
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+#main-nav a:hover {
+    color: var(--green);
+
+}
+
+/*Denne skjuler burgermenuens checkbox som aktiverer toggle funktionen*/
+.hidden {
+    display: none;
+}
+
+/* footer */
+
+#someikoner {
+    display: flex; 
+    justify-content: center;
+}
+
+.some {
+   width: 70px; 
+    margin: 50px; 
+    margin-bottom: 120px; 
+}
+
+
+/** tekst styling **/
+
+h1 {
+    font-family: var(--h_text);
+    color: #000;
+    font-size: 15vw;
+}
+
+h2 {
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: var(--textcolor);
+    max-width: 350px;
+}
+
+p {
+    font-family: var(--maintext);
+    letter-spacing: 2px;
+    color: var(--textcolor);
+}
+
+
+h3 {
+    font-family: var(--h_text);
+    letter-spacing: 2px;
+    color: #000;
+}
+
+h4 {
+    font-weight: 200;
+}
+
+
+/* pil */
+.right {
+    width: 15px;
+    height: 15px;
+    box-shadow: -2px 2px 0 black;
+    transform: rotate(-135deg);
+    position: relative;
+    margin-left: 10px;
+}
+
+
+.pilflex {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.pil {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+/*FORSIDE*/
+/* START FORSIDE OVERSKRIFT */
+
+#forside {
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    color: black; 
+
+}
+
+#forsideh1 {
+    letter-spacing: 3px;
+    margin-top: 0;
+    color: black;
+
+}
+
+/* SLUT FORSIDE OVERSKRIFT */
+
+.forsidevideo {
+    width: 100%;
+    min-width:600px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+
+}
+
+.fade-in {
+    opacity:0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1; 
+}
+
+/* teaser */
+
+.billede1 {
+    width: 50%;
+    height: 50%;
+    opacity: 1; 
+    transition: opacity 400ms ease-in;
+}
+
+.billede2 {
+    width: 50%;
+    height: 50%;
+}
+
+.billede3 {
+    width: 50%;
+    height: 50%;
+}
+
+.billede4 {
+    width: 50%;
+    height: 50%;
+}
+
+.underside1 {
+    width: 50%;
+}
+
+.underside2 {
+    width: 50%;
+}
+
+.underside3 {
+    width: 50%;
+}
+
+.underside4 {
+    width: 50%;
+}
+
+.teaser1 {
+    margin: 50px;
+    margin-bottom: 10%;
+}
+
+.teaser2 {
+    margin: 50px;
+    margin-bottom: 10%;
+
+}
+
+.teaser3 {
+    margin: 50px;
+    margin-bottom: 10%;
+
+}
+
+.teaser4 {
+    margin: 50px;
+    margin-bottom: 10%;
+
+}
+
+.h3_hojre {
+    text-align: end;
+    margin-bottom: -5%;
+    padding: 0;
+    padding-right: 80px;
+}
+
+.h3_venstre {
+    text-align: start;
+    margin-bottom: -5%;
+    padding: 0;
+    padding-left: 80px;
+}
+
+/*SLUT FORSIDE*/
+
+/* VÆRKER START */
+/* overskrift */
+.overskriftgalleri {
+    color: black;
+    font-size: 3vw;
+    text-align: center;
+}
+
+#galleri-tekst {
+    font-family: var(--maintext);
+    color: var(--textcolor);
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 150%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/* Billeder */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33%;
+    /* IE10 */
+    flex: 32%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* VÆRKER SLUT */
+
+/* OM SIDEN */
+.om h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    z-index: 7;
+}
+
+#antonbg {
+    width: 100%;
+    z-index: 0;
+}
+
+
+#h3_1 {
+    padding-left: 80px;
+}
+
+#h3_2 {
+    padding-left: 80px;
+
+}
+
+#h3_3 {
+    text-align: end;
+    padding-right: 80px;
+}
+
+
+.om p {
+    color: black;
+    font-family: var(--maintext);
+    text-align: center;
+    font-size: 130%;
+    line-height: 2;
+    background-image: url(../images/background.png);
+    padding: 6%;
+
+}
+
+#gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+#map {
+        height: 350px !important; 
+        width: 350px !important; 
+    }
+
+#omcta {
+    width: 350px; 
+}
+
+.omslut h4 {
+        margin-left: 0; 
+    }
+
+
+/*OM SIDEN SLUT*/
+
+
+
+
+/*PROCES START*/
+
+#proces h1 {
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+
+#proces {
+    text-align: center;
+    margin: 30px;
+}
+
+.proces_billede {
+    width: 100%;
+}
+
+
+.baggrund_proces1 {
+    background-image: url(../images/background.png);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+}
+
+.baggrund_proces2 {
+    background-image: url(../images/background.png);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+
+}
+
+.proces_tekst {
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin: 20px;
+    line-height: 150%;
+}
+
+#proces h3 {
+    margin-bottom: -25px;
+    z-index: 1;
+}
+
+.processvideo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*PROCES SLUT*/
+
+
+
+
+/* SHOP START*/
+.overskriftshop {
+    color: black;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.shop_tekst {
+    font-family: var(--maintext);
+    color: var(--textcolor);
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+ 
+}
+
+#shoppil {
+    justify-content: center; 
+    
+}
+
+#shoppil h4 {
+    margin-left: 0; 
+}
+
+#kontaktshop {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ikonshop {
+    width: 50px;
+    margin: 30px;
+}
+
+
+/* Billeder */
+.baggrund_shop {
+    background-image: url(../images/baggrund-shop.png);
+    background-size: cover;
+    margin: 4%;
+}
+
+.shop1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.billede_tekst {
+    margin: 10%;
+    font-family: var(--maintext);
+    color: var(--textcolor);
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 150%;
+    margin-top: 20%;
+}
+
+.shop_billede {
+    width: 70%;
+}
+
+/* SHOP SLUT*/
+
+
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    h3 {
+        font-size: 12vw;
+    }
+
+    h2 {
+        font-size: 20px
+    }
+
+    h4 {
+        font-size: 22px;
+
+    }
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+    }
+
+    #logo {
+        width: 15%;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+
+    }
+
+    /*label er selve burgerikonet*/
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        color: black;
+        /*laver en hånd i stedet for en pil, når man kører hen over burgermenuen*/
+    }
+
+    /*Dette gør at burgermenuen folder sig ud, når man klikker på den - eller rettere sagt den checkboks som er skjult bag den*/
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    /*Den primære navigation skjules på den lille skærm*/
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav a {
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    /* KONTAKT KNAP MED POPUP */
+    #contact {
+        color: white;
+        font-weight: 300;
+        font-family: var(--maintext);
+        letter-spacing: 2px;
+        font-size: 20px;
+        background-color: var(--green);
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        top: 70%;
+        right: -7%;
+        transform: rotate(-270deg);
+    }
+
+    .messagepop {
+        background-color: var(--green);
+        cursor: default;
+        display: none;
+        position: fixed;
+        margin-top: 15px;
+        text-align: center;
+        width: 230px;
+        height: 215px;
+        z-index: 10;
+        padding: 25px 25px 20px;
+        top: 65%;
+        right: 15%;
+        font-size: 20px;
+    }
+    
+      /* footer */ 
+    .some {
+        width: 30px;
+        margin: 30px;
+        margin-bottom: 120px; 
+    }
+    
+
+
+    /* TEASER SEKTION START*/
+
+    .billede1 {
+        width: 100%;
+    }
+
+    .billede2 {
+        width: 100%;
+    }
+
+    .billede3 {
+        width: 100%;
+    }
+
+    .billede4 {
+        width: 100%;
+    }
+
+    .underside1 {
+        width: 100%;
+    }
+
+    .underside2 {
+        width: 100%
+    }
+
+    .underside3 {
+        width: 100%
+    }
+
+    .underside4 {
+        width: 100%
+    }
+
+    .teaser2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .teaser4 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* pil */
+    .icon {
+        margin-top: 15%;
+    }
+
+    /* TEASER SEKTION SLUT*/
+    
+    /* galleri */
+    
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%; 
+    }
+    
+    #galleri-tekst {
+        padding-left: 20px;
+        padding-right: 20px; 
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    /* om side */
+    
+    #map {
+        width: 250px !important;
+        height: 250px !important; 
+    }
+    
+    #omcta {
+        width: 250px; 
+    }
+    
+    .omslut {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding-left: 20px;
+    }
+    
+    .omslut h4 {
+        margin-left: -20px;
+    }
+    
+    .slut {
+        margin-top: 80px; 
+    }
+
+    /* proces side */
+    .proces_billede {
+        width: 70%;
+        margin: 10px;
+        margin-top: 30px;
+    }
+
+    .proces_tekst {
+        font-size: 20px;
+    }
+
+    /*SHOP*/
+    .shop1 {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../images/baggrund-shop.png);
+    }
+    
+
+    .shop_tekst {
+        font-size: 20px;
+        line-height: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .billede_tekst {
+        font-size: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
+        text-align: center;
+    }
+
+    .shop_billede {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    h3 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 25px
+    }
+
+    h4 {
+        font-size: 27px;
+        margin-left: 10%;
+    }
+
+    /*HEADER NAV*/
+
+    #logo-burger {
+        display: block;
+        margin-right: 80%;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #main-nav {
+        justify-content: space-between;
+        padding-left: 20%;
+        padding-right: 5%;
+        margin-top: -8%;
+
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /*Dette fjerner burgermenu ikonet*/
+    label {
+        display: none;
+    }
+
+    .messagepop {
+        width: 300px;
+        height: 215px;
+        z-index: 10;
+        padding: 25px 25px 20px;
+        top: 62%;
+        right: 10%;
+        font-size: 20px;
+    }
+    
+    /* footer */ 
+    .some {
+   width: 50px; 
+}
+
+
+
+
+    /* FORSIDE START*/
+    .teaser1 {
+        display: flex;
+    }
+
+    .teaser2 {
+        display: flex;
+    }
+
+    .teaser3 {
+        display: flex;
+    }
+
+    .teaser4 {
+        display: flex;
+    }
+
+    /* pil */
+    .icon {
+        margin-top: 8%;
+    }
+
+    /* FORSIDE SLUT*/
+    
+    /*GALLERI START*/
+    #galleri-tekst {
+        font-size: 25px;
+        max-width: 700px;
+        margin-top: -7%;
+        margin-bottom: 7%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .column {
+        -ms-flex: 33%;
+        flex: 33%;
+        max-width: 33%; 
+    }
+
+    /*GALLERI SLUT*/
+    
+    /* Om side */
+    .omslut {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .slut {
+        margin-top: 50px; 
+    }
+
+    /*PROCES START*/
+    .baggrund_proces1 {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .baggrund_proces2 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 30px;
+    }
+
+    .proces_billede {
+        width: 50%;
+    }
+
+    .proces_tekst {
+        font-size: 25px;
+    }
+
+    #proces h3 {
+        margin-bottom: -40px;
+    }
+
+    /*PROCES SLUT*/
+
+
+
+    /*SHOP START*/
+    .shoplinje1 {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .shoplinje2 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    .shop1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shop_tekst {
+        font-size: 25px;
+        line-height: 50px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .billede_tekst {
+        font-size: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
+        text-align: center;
+    }
+    
+
+    .shop_billede {
+        padding: 2px;
+    }
+    
+   
+
+    /*SHOP SLUT*/
+
+
+}
+
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    h1 {
+        margin-left: 20px;
+    }
+
+    h3 {
+        margin-bottom: -40px;
+        z-index: 10;
+        font-size: 8vw;
+    }
+
+    h2 {
+        margin-top: 15%;
+        margin-left: 20%;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        margin-left: 20%;
+
+
+    }
+
+    /*NAVIGATION*/
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #main-nav {
+        justify-content: space-between;
+        padding-left: 40%;
+        padding-right: 5%;
+        margin-top: 2%;
+
+    }
+
+    /*Dette skubber menuen ud til højre ved at bruge al margin til højre for logoet*/
+    #logo-burger {
+        margin-right: auto;
+    }
+
+
+
+    /* TEASER SEKTION START*/
+
+
+    /* pil */
+    .icon {
+        margin-top: 5%;
+        margin-left: -10%;
+    }
+
+    /* TEASER SEKTION SLUT*/
+
+    /* om siden */
+
+    .antonbillede {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #antonbg {
+        width: 50%;
+    }
+
+    .om #del1 {}
+
+    .om p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
+    .omslut {
+        width: 100%; 
+        display: flex;
+        justify-content: space-around;  
+    }
+
+    /*proces */
+
+    .proces_billede {
+        width: 50%;
+        padding: 5%;
+    }
+
+    .proces_tekst {
+        font-size: 30px;
+        margin: 60px;
+    }
+
+    .processvideo {
+        background-image: url(../images/background.png);
+        padding: 80px;
+    }
+
+
+    /* SHOP*/
+    .shop_tekst {
+        font-size: 30px;
+        line-height: 50px;
+        padding-right: 200px;
+        padding-left: 200px;
+        
+    }
+    
+    
+
+
+    /*GALLERI*/
+    #galleri-tekst {
+        font-size: 30px;
+        max-width: 920px;
+        margin-top: -10%;
+        margin-bottom: 7%;
+    }
+
+    .messagepop {
+        background-color: var(--green);
+        cursor: default;
+        display: none;
+        position: fixed;
+        margin-top: 15px;
+        text-align: center;
+        width: 300px;
+        height: 215px;
+        z-index: 10;
+        padding: 25px 25px 20px;
+        top: 65%;
+        right: 4%;
+        font-size: 20px;
+    }
+

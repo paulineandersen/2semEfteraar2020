@@ -28,56 +28,55 @@ body {
     width: 100%;
 }
 
-
-/* KONTAKT KNAP MED POPUP */
-#contact {
-    color: white;
-    font-family: var(--maintext);
-    letter-spacing: 2px;
-    font-size: 25px;
-    background-color: var(--green);
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: 70%;
-    right: -2%;
-    transform: rotate(-270deg);
-    font-weight: 100;
+#kon {
+    width: 100%; 
 }
 
-.messagepop {
-    background-color: var(--green);
+#takt{
+    width: 130px;
+    height: 60px;
+    background-color: var(--green); 
+    font-family: var(--maintext);
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+    position: fixed; ;
+    top: 70%;
+    transform: rotate(-270deg);
+    font-weight: 100;
+    right:-30px;
+    
+}
+#takt p {
+    color: white; 
+}
+
+#klik {
+
+   background-color: var(--green);
     cursor: default;
     position: fixed;
     margin-top: 15px;
     text-align: center;
-    width: 400px;
-    height: 400px;
     z-index: 10;
     padding: 25px 25px 20px;
-    top: 65%;
     right: 3%;
     font-size: 20px;
 }
 
-.messagepop p {
-    color: #fff; 
+#klik p {
+    color: white; 
 }
 
-.kontakt-info {
-    color: #fff;
-    font-weight: 200;
-    letter-spacing: 2px;
+.some_hvid {
+    width: 20%;
 }
 
-#some_hvid {
-    width: 60%;
+#kontaktsome {
+    display: flex;
+    justify-content: space-between;
 }
 
-#kontaktmap {
-    width: 150px !important;
-    height: 150px !important; 
-}
 
 /* LINKS - fjerner farve og understregning*/
 a:link {
@@ -238,24 +237,19 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
-    filter:opacity(60%);
-    animation-name: fadein;
-    animation-duration: 5s; 
+    }
+
+#hero {
+        min-width: 600px; 
 
 }
 
-/* fadein */
-@keyframes fadein {
-    from: 
-}
 
 /* teaser */
 
 .billede1 {
     width: 50%;
     height: 50%;
-    opacity: 1; 
-    transition: opacity 400ms ease-in;
 }
 
 .billede2 {
@@ -637,36 +631,23 @@ h4 {
 
 
     /* KONTAKT KNAP MED POPUP */
-    #contact {
-        color: white;
-        font-weight: 300;
-        font-family: var(--maintext);
-        letter-spacing: 2px;
-        font-size: 20px;
-        background-color: var(--green);
-        padding: 20px;
-        text-align: center;
-        position: fixed;
-        top: 70%;
-        right: -7%;
-        transform: rotate(-270deg);
-    }
-
-    .messagepop {
-        background-color: var(--green);
-        cursor: default;
-        display: none;
-        position: fixed;
+    #klik{
         margin-top: 15px;
         text-align: center;
-        width: 230px;
-        height: 215px;
+        width: 300px;
+        height: 300px;
         z-index: 10;
         padding: 25px 25px 20px;
-        top: 65%;
+        top: 50%;
         right: 15%;
         font-size: 20px;
     }
+    
+    #klik p {
+        margin-top: 20%; 
+    }
+    
+
     
       /* footer */ 
     .some {
@@ -674,6 +655,7 @@ h4 {
         margin: 30px;
         margin-bottom: 120px; 
     }
+    
 
 
     /* TEASER SEKTION START*/
@@ -880,6 +862,23 @@ h4 {
     .some {
    width: 50px; 
 }
+    
+    /* kontakt knap */ 
+    #klik {
+       width: 450px;
+        height: 300px;
+        z-index: 10;
+        padding: 25px 25px 20px;
+        top: 62%;
+        right: 8%;
+        font-size: 22px;
+    }
+    
+    
+    .some_hvid {
+        width: 15%;
+        margin: 10%;
+    }
 
 
 
@@ -1058,6 +1057,29 @@ h4 {
     #logo-burger {
         margin-right: auto;
     }
+    
+    /* kontakt knap */ 
+    #klik {
+        margin-top: 15px;
+        text-align: center;
+        width: 500px;
+        height: 350px;
+        z-index: 10;
+        padding: 25px 25px 20px;
+        top: 65%;
+        right: 4%;
+        font-size: 20px;
+    }
+    
+    #klik p {
+        margin-top: 10%;
+        font-size: 25px; 
+    }
+    
+    .some_hvid {
+        width: 10%;
+        margin: 10%;
+    }
 
 
 
@@ -1136,19 +1158,4 @@ h4 {
         margin-bottom: 7%;
     }
 
-    .messagepop {
-        background-color: var(--green);
-        cursor: default;
-        display: none;
-        position: fixed;
-        margin-top: 15px;
-        text-align: center;
-        width: 300px;
-        height: 215px;
-        z-index: 10;
-        padding: 25px 25px 20px;
-        top: 65%;
-        right: 4%;
-        font-size: 20px;
-    }
-
+    

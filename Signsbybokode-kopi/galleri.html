@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>Signs By Bo</title>
+    <meta name="author" content="Alberte, Emma, Pauline, Signe">
+    <meta name="description" content="Håndmalede skilte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Skilte, Håndmalede, Håndværk">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/logo" />
+</head>
+
+
+<body>
+
+    <header>
+        <!-- /*Navigationsbar med inspiration fra Michelle: https://github.com/itaddiction/flexnavdropdown*/ -->
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/logo_signsbybo.png" alt="logo-signsbyb0" id="logo"></a>
+
+                <!--The toggle() method toggles between hide() and show() for the selected elements. -->
+                <label for="toggle">&#9776;</label>
+
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <a href="galleri.html">værker</a>
+                <a href="om.html">om</a>
+                <a href="proces.html">proces</a>
+                <a href="shop.html">shop</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- overskrift -->
+    <div class="overskriftgalleri">
+        <h1>VÆRKER</h1>
+    </div>
+
+
+    <!-- Kontakt knap med pop up -->
+    <div class="messagepop pop">
+        <div method="post" id="new_message" action="/messages">
+            <p class="kontakt-info">23943044</p>
+            <p class="kontakt-info">antonbo@mail.dk</p>
+
+        </div>
+    </div>
+
+    <a href="/contact" id="contact">kontakt</a>
+
+
+    <!-- galleri tekst -->
+    <p id="galleri-tekst">Her kan du se et udkast af mine værker fra tidligere kunder. Du kan bruge dem som inspiration, hvis du ønsker at få lavet dit eget håndmalede skilt til din virksomhed eller dit hjem. </p>
+
+    <!-- Sektion med billeder -->
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="/images/a.jpg" style="width:100%" alt="galleri-billede">
+            <img src="/images/b.jpg" style="width:100%" alt="galleri-billede">
+            <img src="/images/c.jpg" style="width:100%" alt="galleri-billede">
+        </div>
+        <div class="column">
+            <img src="/images/e.jpg" style="width:100%" alt="galleri-billede">
+            <img src="/images/f.jpg" style="width:100%" alt="galleri-billede">
+            <img src="/images/g.jpg" style="width:100%" alt="galleri-billede">
+            <img src="/images/h.jpg" style="width:100%" alt="galleri-billede">
+
+        </div>
+        <div class="column">
+            <img src="/images/i.jpg" style="width:100%" alt="galleri-billede">
+            <img src="/images/j.JPG" style="width:100%" alt="galleri-billede">
+            <img src="/images/k.JPG" style="width:100%" alt="galleri-billede">
+            <img src="/images/l.jpg" style="width:100%" alt="galleri-billede">
+            <img src="/images/d.jpg" style="width:100%" alt="galleri-billede">
+        </div>
+
+    </div>
+
+<!-- hvis du bruger jQuery, så skal biblioteket lige loades først -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- script -->
+    <script src="js/js.js"></script>
+
+
+</body>
+<!--footer -->
+<footer>
+    <div id="someikoner">
+    <img class="some" src="images/instagram.png" alt="instagram">
+    <img class="some" src="images/facebook.png" alt="facebook">
+    <img class="some" src="images/youtube.png" alt="youtube">
+    </div>
+</footer>
+</html>
+
