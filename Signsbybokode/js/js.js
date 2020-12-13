@@ -46,32 +46,10 @@ $(document).ready(function () {
         })
     });
 
-    /**
-        let topTest, topPosition; // bruges til at gemme data om elementerne
-
-        // ved scrolle testes om et elements topposition svarer til scroll
-        $(window).scroll(function () {
-
-            topTest = $(".teaser1").offset().top;
-            topPosition = $(window).scrollTop();
-
-            console.log('Scroll - nu er scrollpositonen : ' + topPosition);
-
-            if ((topPosition) >= topTest) {
-                console.log('YABBADABBADOOOOOO'); // giver lidt luft i toppen ;-)
-                $('.teaser1').css('filter', 'opacity(1)');
-                // gør noget med dine elementer her ...
-                // $('#dinIdA').css(etc.)
-            } else {
-                $('.teaser1').css('filter', 'opacity(0)');
-            }
-
-        });
-
-        **/
     
     let topTest, topPosition; 
 
+            // ved scrolle testes om et elements topposition svarer til scroll
 
     $(window).scroll(function () {
 
@@ -191,10 +169,4 @@ var map = new mapboxgl.Map({
     center: [10.1876355, 56.1587063], // starting position [lng, lat]
     zoom: 14, // starting zoom
 });
-
-// tilføjer markør 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.18804, 56.15867])
-.addTo(map);
-  
 
